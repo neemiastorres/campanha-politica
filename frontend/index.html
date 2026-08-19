@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegisData - Painel Eleitoral</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    
+    <!-- Header / Barra Superior -->
+    <header class="bg-gray-800 border-b border-gray-700 p-4 flex justify-between items-center">
+        <div>
+            <h1 class="text-xl font-bold text-blue-400">LegisData</h1>
+            <p class="text-xs text-gray-400">Painel Executivo | Deputado Federal / Estadual</p>
+        </div>
+        <span class="bg-green-500/20 text-green-400 text-xs px-3 py-1 rounded-full border border-green-500/30">
+            ● Backend Conectado
+        </span>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="p-6 max-w-7xl mx-auto space-y-6">
+        
+        <!-- Cards de Indicadores de Desempenho (KPIs) -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">
+                <span class="text-xs text-gray-400 block">Meta do Quociente Eleitoral</span>
+                <span class="text-2xl font-bold text-blue-400">78%</span>
+                <p class="text-xs text-gray-400 mt-1">Faltam 8.500 votos para a meta</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">
+                <span class="text-xs text-gray-400 block">Votos Órfãos (Prioridade P1)</span>
+                <span class="text-2xl font-bold text-green-400">3 Cidades</span>
+                <p class="text-xs text-green-400/80 mt-1">Oportunidade de expansão ativa</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">
+                <span class="text-xs text-gray-400 block">Ativação do CRM (Lideranças)</span>
+                <span class="text-2xl font-bold text-yellow-400">82%</span>
+                <p class="text-xs text-gray-400 mt-1">Rede de apoio engajada</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">
+                <span class="text-xs text-gray-400 block">Alertas de Fake News</span>
+                <span class="text-2xl font-bold text-red-400">1 Ativo</span>
+                <p class="text-xs text-red-400/80 mt-1">Ação recomendada no Sul</p>
+            </div>
+        </div>
+
+        <!-- Painel Central e Ações do Dia (PDCA) -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Recomendações e Ações do Dia -->
+            <div class="lg:col-span-2 bg-gray-800 p-5 rounded-xl border border-gray-700 space-y-4">
+                <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                    🎯 Ações Estratégicas do Dia (PDCA)
+                </h2>
+                
+                <div class="bg-blue-900/30 border border-blue-500/40 p-4 rounded-lg flex justify-between items-center">
+                    <div>
+                        <span class="text-xs font-semibold text-blue-400 uppercase">[P1 - Custo/Voto Mínimo]</span>
+                        <p class="text-sm font-medium mt-1">Município X possui 2.100 votos órfãos disponíveis.</p>
+                        <p class="text-xs text-gray-400">Ação recomendada: Enviar áudio segmentado para lideranças locais.</p>
+                    </div>
+                    <button class="bg-blue-600 hover:bg-blue-500 text-white text-xs px-4 py-2 rounded-lg font-semibold">
+                        Executar
+                    </button>
+                </div>
+
+                <div class="bg-red-900/30 border border-red-500/40 p-4 rounded-lg flex justify-between items-center">
+                    <div>
+                        <span class="text-xs font-semibold text-red-400 uppercase">[P4 - Reputação]</span>
+                        <p class="text-sm font-medium mt-1">Boato sobre saúde circulo nos grupos do Sul do Estado.</p>
+                        <p class="text-xs text-gray-400">Ação recomendada: Disparar nota oficial de esclarecimento.</p>
+                    </div>
+                    <button class="bg-red-600 hover:bg-red-500 text-white text-xs px-4 py-2 rounded-lg font-semibold">
+                        Disparar
+                    </button>
+                </div>
+            </div>
+
+            <!-- Ranking de Lideranças por Região -->
+            <div class="bg-gray-800 p-5 rounded-xl border border-gray-700">
+                <h2 class="text-lg font-bold text-white mb-4">🏆 Desempenho de Lideranças</h2>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center text-sm border-b border-gray-700 pb-2">
+                        <div>
+                            <p class="font-medium">Liderança A (Norte)</p>
+                            <p class="text-xs text-gray-400">Meta: 1.500 votos</p>
+                        </div>
+                        <span class="text-green-400 font-bold">95%</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm border-b border-gray-700 pb-2">
+                        <div>
+                            <p class="font-medium">Liderança B (Sul)</p>
+                            <p class="text-xs text-gray-400">Meta: 800 votos</p>
+                        </div>
+                        <span class="text-yellow-400 font-bold">70%</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <div>
+                            <p class="font-medium">Liderança C (Centro)</p>
+                            <p class="text-xs text-gray-400">Meta: 2.000 votos</p>
+                        </div>
+                        <span class="text-red-400 font-bold">45%</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
